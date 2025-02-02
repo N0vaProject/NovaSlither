@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/aa17b4b6b9.js" crossorigin="anonymous"></script>
+  <title>NovaSlither</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="title">NovaSlither</h1>
+  <div class="game-container">
+    <div class="game-board" id="game-board"></div>
+    <div class="control-bar">
+      <div class="score"><i class="fa-solid fa-star"></i>得分: <span id="score">0</span></div>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="start-btn" id="start-btn">开始游戏</button>
+      <button class="pause-btn" id="pause-btn"><i class="fas fa-pause" width="0.9rem" height="0.9rem"></i><span>Esc</span></button>
+    </div>
+    <div class="status" id="status">Game Over</div>
+  </div>
+  <script src="scripts/game.js"></script>
+  <script src="scripts/themeToggle.js"></script>
+</body>
+</html>
